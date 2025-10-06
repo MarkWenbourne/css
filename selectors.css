@@ -1,0 +1,37 @@
+p { /* This will edit all p (paragraphs) in the html file*/
+    color:deeppink; /* This will change the color of the text*/
+}
+
+div {
+    background-color:aqua; /* This will change the color of all dives (not text)*/
+}
+
+.bold { /*This is in reference to the bold class from the html file.*/
+    font-weight: bold;
+}
+
+.italics {
+    font-style: italic;
+}
+
+#site-title { /*Links to id*/
+    font-size: 48px;
+    color:blue;
+}
+
+.white-text {
+    color:white;
+}
+
+.bold.italics { /*This only applies to specific elements that has BOTH bold AND italics applied to it.*/
+    background-color:brown;
+}
+
+div.italics { /*This only applies to divs that have the "italics" class.*/
+    font-size: 24px;
+}
+
+#special-div p { /*This will select all "p" elements that are a apart of the special-div id.*/
+    font-family: cursive;
+    color:darkgreen;
+}

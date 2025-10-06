@@ -3,33 +3,34 @@
   <head>
     <meta charset="utf-8">
     <title>CSS Selectors</title>
-    <link href="selectors.css" rel="stylesheet" />
+    <link href="selectors.css" rel="stylesheet" /> <!--"selectors.css" is the css file that we will use to edit the website, rel tells the website "this is a css file"-->
+    <!--<style></style> would be the same thing we write in "selectors.css", but in html form.-->
   </head>
   <body>
 
-    <h1>This is the title</h1>
+    <h1 id="site-title">This is the title</h1>
 
-    <div>
+    <div> <!-- div will group  contents together-->
       First div
-      <p>First div's paragraph</p>
+      <p class="bold">First div's paragraph</p> <!--class assigns specifc parts that you want to edit in css. The name can be anything-->
     </div>
 
     <div>
       Second div
-      <p>Second div's paragraph</p>
+      <p class="bold"><span class="white-text">Second</span> div's paragraph</p> <!--If you want a specific part of a text modified, surround it with "span" and give it a class name, edit it in css.-->
     </div>
 
-    <div>
+    <div class="italics">
       Third div
       <p>Third div's paragraph</p>
     </div>
 
     <div>
       Fourth div
-      <p>Fourth div's paragraph</p>
+      <p class="bold italics">Fourth div's paragraph</p> <!--This applies both "bold" and "italics" class.-->
     </div>
 
-    <div>
+    <div id="special-div"> <!--id will take you to this portion of the page when a linked is clicked, if the link has #(idname) in it.-->
       Fifth div
       <p>Fifth div's paragraph</p>
     </div>
