@@ -1,0 +1,20 @@
+p {
+    height: 100px;
+    width: 100px;
+    padding: 0px 16px 32px 64px; /*Pushes the content from the edges, 0 padding is default. First value represents top and bottom, second value represent left and right. One value is uniform, you can also change all four sides, and is clockwise.*/
+    border: 2px solid gold;
+    margin: 24px;
+    text-align: center;
+}
+
+#special-p {
+    /*border-right: 10px dotted darkblue;*/
+    padding-top: 128px; /*This changes the padding for the top ONLY.*/
+    border-color: darkblue;
+    border-width: 10px;
+    margin-left: 270px;
+}
+
+.outer-box {   
+    display: inline-block; /*Changes div display from top to bottom to left to right*/
+}
