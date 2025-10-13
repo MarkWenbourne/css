@@ -1,12 +1,15 @@
-body {
+html {
   font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 12px;
 }
 
 p {
   margin: 5px;
+  font-size: 2rem;
 }
 
 .outer {
+  position: relative;
   width: 400px;
   height: 400px;
   margin: 5px;
@@ -30,4 +33,33 @@ p {
 
 .inner.unpositioned {
   background-color: #ababab;
+}
+
+.static {
+  position: static; /*Default positioning*/
+}
+
+.relative {
+  position: relative;
+  top: 50px; /*Moves element DOWN away from the top.*/
+  /*bottom: 84px; /*Moves element UP from the bottom.*/
+  /*Same for left and right*/
+  left: 80px;
+}
+
+/*Absolute is a "hiearchy", it will go from the lowest to the top (body), if there is no "position" until
+it hits body, it will position itself according to the "body".
+
+If aboslute doesn't have a definer such as "top" or "left", it will act as a static position*/
+.absolute {
+  position: absolute;
+  top: 50px;
+  left: 80px;
+}
+
+/*Positions according to the "viewport", or the visibile bounds of the website.*/
+.fixed {
+  position: fixed;
+  bottom: 50px;
+  right: 80px;
 }

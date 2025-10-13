@@ -1,0 +1,18 @@
+html {
+    /*Use Google fonts for ideas*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /*Each comma is a fallback... if the font you chose is not on a person's machine, it will fall back to the next comma. sans-serif is generally used amongst most things.*/
+    /*font-family: serif;*/
+    /*font-family: monospace; /*Puts texts in "columns"*/
+    /*font-family: cursive; /*Not recommended*/
+    /*font-family: fantasy; /*Not recommended*/
+
+    font-family: "EB Garamond", serif; /*Quotes are used when the font has 2 or more words.*/
+    font-optical-sizing: auto;
+    font-weight: normal; /*The "boldness" or "thickness" of the text*/
+    font-size: 24px;
+
+    /* color: rgb(128, 128, 255) */
+    color: #8c941b;
+    /* color: rgba(255, 0, 220, 0.3); /*4th digit is transparency/opacity of the color*/
+    /* color: #8c941b30; /*Last two digits is transparency/opacity of the color*/
+}
