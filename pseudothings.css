@@ -1,3 +1,32 @@
+/*You can go to https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes 
+for a list of pseudo classes.*/
+
 body {
   font-family: "Helvetica Neue", Helvetica, sans-serif;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.25)
+}
+
+/* Pseudo Class has 1 ":" */
+li:hover {
+  background-color:aqua
+}
+
+/* Pseudo Element has 2 ":" */
+a::after {
+  content: " test";
+}
+
+.advanced {
+  width: 200px;
+  height: 200px;
+  margin: 100px;
+  border: 2px solid black;
+
+  /*First two numbers control the "size" of the shadow, the third number controls the "fuzzyness" of the
+  shadow*/
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.55);
+  
+  border-radius: 20px; /*You can make this 50% to make a full circle*/
+
+  cursor: crosshair;
 }
