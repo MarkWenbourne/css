@@ -38,3 +38,20 @@ header h1 {
 .right {
   float: right;
 }
+
+@media(max-width: 640px) { /*Whatever css is put here will only apply to devices with 640px or less.*/
+  
+  .navitem {
+    display: block;
+  }
+
+  .navitem.right {
+    float: none;
+  }
+}
+
+/*The following sets a parameter for sizes you modify
+@media(mi-width: 641px) AND (max-width: 800px) {
+
+}
+*/
